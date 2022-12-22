@@ -1,13 +1,15 @@
 import React from 'react';
-import './App.css';
+
 import MyCustomGrid from "./MyCustomGrid";
+import MyCustomTablet from "./MyCustomTablet";
 
 const App = () => {
   return (
     <div>
       <MyCustomGrid />
-      <MyCustomGrid />
-      <MyCustomGrid />
+      <MyCustomTablet />
+      <MyCustomTablet />
+      <MyCustomTablet />
     </div>
   );
 };
