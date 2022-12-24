@@ -3,10 +3,12 @@ import React from 'react';
 import MyCustomGrid from "./MyCustomGrid";
 import MyCustomTablet from "./MyCustomTablet";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <div>
       <MyCustomGrid />
+      <MyCustomTablet />
+      <MyCustomTablet />
       <MyCustomTablet />
       <MyCustomTablet />
       <MyCustomTablet />

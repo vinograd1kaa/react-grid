@@ -9,8 +9,8 @@ import { BottomWrapper, BottomTitleCall, BottomTitleManage, Padding } from "./st
 
 import Icon from "./icon";
 
-const MyCustomTablet = () => {
-  const tagNames = [
+const MyCustomTablet: React.FC = () => {
+  const tagNames: string[] = [
     'Tag Name 1',
     'Tag Name 2',
     'Tag Name 3',
@@ -20,7 +20,7 @@ const MyCustomTablet = () => {
     'Tag Name 7',
   ];
 
-  const threeTagNames = tagNames.slice(0, 3);
+  const threeTagNames: string[] = tagNames.slice(0, 3);
 
   return (
     <Container>
