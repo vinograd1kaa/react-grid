@@ -17,31 +17,33 @@ export const TopTextTitleNames = styled('h1')`
 `;
 
 export const TopTextTitleScore = styled('h3')`
-  margin-left: 80px;
+  margin-left: 26px;
   color: #777;
   font-size: 13px;
   text-transform: uppercase;
 `;
 
 export const TopScoreCounter = styled('span')`
-  width: 28px;
+  padding: 0 2px;
   height: 25px;
   color: #fff;
   background: #3596cc;
   border-radius: 7px;
-  margin-left: 18px;
+  margin-left: 26px;
+  cursor: pointer;
 `;
 
 export const TopTagsSection = styled('div')`
   display: flex;
+  flex-wrap: wrap;
   padding: 0 8px;
 `;
 
 export const TopTag = styled('span')`
   border-radius: 13px;
   background: #e8f2fa;
-  margin-right: 8px;
-  width: 92px;
+  margin: 2px 8px 2px 0;
+  padding-left: 12px;
   height: 26px;
   position: relative;
   
@@ -63,8 +65,12 @@ export const TopTagName = styled('h2')`
   padding: 6px 7px 0 0;
 `;
 
+export const NewString = styled('div')`
+  width: 100%;
+`;
+
 export const MoreTags = styled('h2')`
   color: #8076b7;
-  line-height: 22px;
+  line-height: 30px;
   margin-left: 5px
 `;

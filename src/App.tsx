@@ -8,10 +8,6 @@ const App: React.FC = () => {
     <div>
       <MyCustomGrid />
       <MyCustomTablet />
-      <MyCustomTablet />
-      <MyCustomTablet />
-      <MyCustomTablet />
-      <MyCustomTablet />
     </div>
   );
 };
