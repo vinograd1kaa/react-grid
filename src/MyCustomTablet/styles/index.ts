@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled('div')`
   font-family: Trebuchet MS, sans-serif;
   width: 350px;
-  height: 150px;
   margin: 20px;
   display: inline-block;
   border-left: 8px solid #32c747;

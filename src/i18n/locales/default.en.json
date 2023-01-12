@@ -36,7 +36,7 @@
       "TagName": "{{name}}",
       "Name": "Random Names",
       "Score": "Score",
-      "Counter": "100",
+      "ShowTags": "Show Tags",
       "Call": "On call",
       "Manage": "Manage"
     }
