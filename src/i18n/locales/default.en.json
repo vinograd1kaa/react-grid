@@ -1,0 +1,44 @@
+{
+  "en": {
+    "Grid": {
+      "Rows": {
+        "Cid": "cid",
+        "CallType": "call type",
+        "Start": "start at",
+        "Client": "client name",
+        "Brand": "brand",
+        "Group": "group",
+        "Sales": "sales status after",
+        "CallerAgent": "caller agent",
+        "Duration": "duration",
+        "BillDuration": "bill duration",
+        "Hangup": "hangup",
+        "CallerId": "caller id",
+        "To": "to"
+      },
+      "Columns": {
+        "Cid": "1234",
+        "CallType": "Predicrive Calls",
+        "Start": "22/11/23 12:23:23",
+        "Client": "Karter Martin",
+        "Brand": "Brand",
+        "Group": "Online Group",
+        "Sales": "lead_status",
+        "CallerAgent": "Karter Martin",
+        "Duration": "00:00:23",
+        "BillDuration": "00:00:23",
+        "Hangup": "Agent",
+        "CallerId": "ID 123456",
+        "To": "45672371610"
+      }
+    },
+    "Tablet": {
+      "TagName": "{{name}}",
+      "Name": "Random Names",
+      "Score": "Score",
+      "Counter": "100",
+      "Call": "On call",
+      "Manage": "Manage"
+    }
+  }
+}

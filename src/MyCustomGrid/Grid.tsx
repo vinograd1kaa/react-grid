@@ -1,18 +1,19 @@
 import React, {useMemo, useState} from 'react';
-import './styles.css';
-
+import './styles/index.css';
 import {columns, rows} from "./data";
 
 import {AgGridReact} from 'ag-grid-react';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 
-const MyCustomGrid: React.FC = () => {
+import {WithTranslation} from "react-i18next";
+
+const Grid: React.FC<WithTranslation> = ({ t }) => {
   const containerStyle = useMemo(() => ({ width: '100%', height: '100%' }), []);
   const gridStyle = useMemo(() => ({ height: '100%', width: '100%' }), []);
 
-  const [rowData] = useState(rows);
-  const [columnDefs] = useState(columns);
+  const [rowData] = useState(rows(t));
+  const [columnDefs] = useState(columns(t));
 
   return (
     <div style={containerStyle}>
@@ -32,4 +33,4 @@ const MyCustomGrid: React.FC = () => {
   );
 };
 
-export default MyCustomGrid;
+export default Grid;

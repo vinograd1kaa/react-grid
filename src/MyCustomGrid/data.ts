@@ -1,36 +1,24 @@
-type Row = {
-  cid: string;
-  'call type': string;
-  'start at': string;
-  'client name': string;
-  brand: string;
-  group: string;
-  'sales status after': string;
-  'caller agent': string;
-  duration: string;
-  'bill duration': string;
-  hangup: string;
-  'caller id': string;
-  to: string;
+const newRow = (t: any) => {
+  return {
+    [`${t('Grid.Rows.Cid')}`]: `${t('Grid.Columns.Cid')}`,
+    [`${t('Grid.Rows.CallType')}`]: `${t('Grid.Columns.CallType')}`,
+    [`${t('Grid.Rows.Start')}`]: `${t('Grid.Columns.Start')}`,
+    [`${t('Grid.Rows.Client')}`]: `${t('Grid.Columns.Client')}`,
+    [`${t('Grid.Rows.Brand')}`]: `${t('Grid.Columns.Brand')}`,
+    [`${t('Grid.Rows.Group')}`]: `${t('Grid.Columns.Group')}`,
+    [`${t('Grid.Rows.Sales')}`]: `${t('Grid.Columns.Sales')}`,
+    [`${t('Grid.Rows.CallerAgent')}`]: `${t('Grid.Columns.CallerAgent')}`,
+    [`${t('Grid.Rows.Duration')}`]: `${t('Grid.Columns.Duration')}`,
+    [`${t('Grid.Rows.BillDuration')}`]: `${t('Grid.Columns.BillDuration')}`,
+    [`${t('Grid.Rows.Hangup')}`]: `${t('Grid.Columns.Hangup')}`,
+    [`${t('Grid.Rows.CallerId')}`]: `${t('Grid.Columns.CallerId')}`,
+    [`${t('Grid.Rows.To')}`]: `${t('Grid.Columns.To')}`
+  }
 }
 
-const row: Row = {
-  cid: '1234',
-  'call type': 'Predicrive Calls',
-  'start at': '22/11/23 12:23:23',
-  'client name': 'Karter Martin',
-  brand: 'Brand',
-  group: 'Online Group',
-  'sales status after': 'lead_status',
-  'caller agent': 'Karter Martin',
-  duration: '00:00:23',
-  'bill duration': '00:00:23',
-  hangup: 'Agent',
-  'caller id': 'ID 123456',
-  to: '45672371610',
-};
-
-export const rows: Row[] = [row, row, row, row];
+export const rows = (t: any) => {
+  return [newRow(t), newRow(t), newRow(t), newRow(t)];
+}
 
 type Column = {
   name: string;
@@ -46,18 +34,20 @@ const newColumn = (column: Column) => {
   };
 }
 
-export const columns = [
-  newColumn({name: 'cid', widthSize: 70}),
-  newColumn({name: 'call type'}),
-  newColumn({name: 'start at'}),
-  newColumn({name: 'client name', widthSize: 140}),
-  newColumn({name: 'brand'}),
-  newColumn({name: 'group'}),
-  newColumn({name: 'sales status after', widthSize: 170}),
-  newColumn({name: 'caller agent', widthSize: 140}),
-  newColumn({name: 'duration'}),
-  newColumn({name: 'bill duration', widthSize: 140}),
-  newColumn({name: 'hangup'}),
-  newColumn({name: 'caller id'}),
-  newColumn({name: 'to'}),
-]
+export const columns = (t: any) => {
+  return [
+    newColumn({name: `${t('Grid.Rows.Cid')}`, widthSize: 70}),
+    newColumn({name: `${t('Grid.Rows.CallType')}`}),
+    newColumn({name: `${t('Grid.Rows.Start')}`}),
+    newColumn({name: `${t('Grid.Rows.Client')}`, widthSize: 140}),
+    newColumn({name: `${t('Grid.Rows.Brand')}`}),
+    newColumn({name: `${t('Grid.Rows.Group')}`}),
+    newColumn({name: `${t('Grid.Rows.Sales')}`, widthSize: 170}),
+    newColumn({name: `${t('Grid.Rows.CallerAgent')}`, widthSize: 140}),
+    newColumn({name: `${t('Grid.Rows.Duration')}`}),
+    newColumn({name: `${t('Grid.Rows.BillDuration')}`, widthSize: 140}),
+    newColumn({name: `${t('Grid.Rows.Hangup')}`}),
+    newColumn({name: `${t('Grid.Rows.CallerId')}`}),
+    newColumn({name: `${t('Grid.Rows.To')}`})
+  ]
+}
