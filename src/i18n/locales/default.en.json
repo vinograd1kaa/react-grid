@@ -33,7 +33,8 @@
       }
     },
     "Tablet": {
-      "TagName": "{{name}}",
+      "TagName": "{{sName}}",
+      "HiddenTagName": "{{hName}}",
       "Name": "Random Names",
       "Score": "Score",
       "Counter": "100",
