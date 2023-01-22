@@ -8,7 +8,7 @@ import 'ag-grid-community/styles/ag-theme-alpine.css';
 
 import {WithTranslation} from "react-i18next";
 
-const Grid: React.FC<WithTranslation> = ({ t }) => {
+const Grid: React.FC<WithTranslation> = ({ t }: any) => {
   const containerStyle = useMemo(() => ({ width: '100%', height: '100%' }), []);
   const gridStyle = useMemo(() => ({ height: '100%', width: '100%' }), []);
 

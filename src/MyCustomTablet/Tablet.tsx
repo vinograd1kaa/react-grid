@@ -68,7 +68,7 @@ const Tablet: React.FC<WithTranslation> = ({ t }) => {
             <MoreTagsNum
               onMouseEnter={() => setHiddenTags(hiddenTagNames && true)}
               onMouseLeave={() => setHiddenTags(false)}>
-                {`+ ${numHiddenTagNames}`}
+              {`+ ${numHiddenTagNames}`}
             </MoreTagsNum>
             {hiddenTags &&
               <ShowMoreTags>
