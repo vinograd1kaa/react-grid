@@ -1,18 +1,14 @@
 import React from 'react';
-
+import { Wrapper } from "./App.style";
 import MyCustomGrid from "./MyCustomGrid";
 import MyCustomTablet from "./MyCustomTablet";
 
 const App: React.FC = () => {
   return (
-    <div>
+    <Wrapper>
       <MyCustomGrid />
       <MyCustomTablet />
-      <MyCustomTablet />
-      <MyCustomTablet />
-      <MyCustomTablet />
-      <MyCustomTablet />
-    </div>
+    </Wrapper>
   );
 };
 
